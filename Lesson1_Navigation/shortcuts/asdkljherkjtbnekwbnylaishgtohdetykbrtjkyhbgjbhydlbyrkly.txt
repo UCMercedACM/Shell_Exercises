@@ -1,0 +1,14 @@
+Hey, you made it! Note that while autocompletion is pretty awesome, it only
+fills in as much as it can figure out. For instance, there are two files in here
+named "pony1.txt" and "pony2.txt".
+
+If you type "cat po" and hit TAB, the shell will complete to "cat pony".
+
+Unfortunately, it stops there. The shell can't figure out whether you mean
+pony1.txt or pony2.txt! If you hit TAB again, it'll show you a list of files that
+it can't decide between. You can then clarify what you mean and it will complete
+as far as it can. In this case, if you type a "1" and hit TAB again, it'll
+autocomplete to "pony1.txt".
+
+Feel free to play around a bit. When you're ready to go back, go up *two*
+directories by using `cd ../..`.

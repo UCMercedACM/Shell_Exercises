@@ -1,0 +1,18 @@
+I don't know about you, but all this typing is really wearing on my fingertips.
+Fortunately, there's an easier way to do all of this! Most shells come with
+powerful history and autocompletion tools. Go ahead and press the up and down
+arrow keys now. You should be able to see the commands you already issued
+while working on this lesson.
+
+Go ahead and cat this file again by running `cat objective.txt`. Don't
+type the command out again though! Use the arrow keys to scroll through your
+commands until you find one that matches, then hit ENTER to run it again.
+
+Now that you have a handle on command history, let's look at TAB completion, one
+of the most useful tools ever! Your next instructions are located in
+`asdkljherkjtbnekwbnylaishgtohdetykbrtjkyhbgjbhydlbyrkly.txt`.
+
+It would be ridiculous to ask you to type the whole file out...so we won't!
+Instead, you should type "cat a" and then hit the TAB key. The shell
+should be able to figure out exactly what you mean and fill out the file name
+for you. Then hit ENTER.

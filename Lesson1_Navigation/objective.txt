@@ -1,13 +1,20 @@
 Lesson 1 - Navigation
 
 Objectives:
-* To gain an understanding of the Filesystem structure
-* To understand how to move around the filesystem from the commandline
+* To gain an understanding of the filesystem structure
+* To understand how to move around the filesystem from the command line
+
+Notations:
+* For the rest of this tutorial, commands will be enclosed in backticks. For
+  example, you got to this file by running `cat objective.txt`
+* Larger pieces of code will be indented. You opened this file by running
+
+    cat objective.txt
 
 Procedure:
 * Watch the presentation at the front to get an understanding of the filesystem
-* run ls to see all the files in in the directory
-* once you've done that cd into the directory flags
-* run ls and cat the the file you find
+* Run `ls` to see all the files in in the directory
+* Once you've done that run `cd flags` to cd into the directory flags
+* Once inside, run `ls` and `cat` the the file you find
 
 TODO: add cd and ls documentation to intro

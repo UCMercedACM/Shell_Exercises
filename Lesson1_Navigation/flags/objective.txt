@@ -1,6 +1,9 @@
-It looks like there's only one file here....or is there
+It looks like there's only one file here....or is there??
 
-Try out 
-	ls -a 
+Try using the command
+
+    ls -a
+
 What did you find? print the contents of the file with
-	cat <filename>
+
+    cat <filename>

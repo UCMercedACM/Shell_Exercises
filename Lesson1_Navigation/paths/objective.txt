@@ -1,3 +1,14 @@
-do you know where this directory is located? run 
-	pwd 
-to find out where you are
+What is the path to this directory?
+
+Not sure? Run	`pwd` to find out where you are!
+
+There are two kinds of paths used in UNIX systems:
+*		Absolute paths start from the root (/) and name every directory along the
+		way. For instance, /home/user/spam/eggs.txt is an absolute path
+*		Relative paths start at the current working directory (which you can find
+		by using `pwd`), and continue downwards. They *DO NOT* start with a slash!
+
+The next file you'll need to read is located further down in some directories.
+Up until now, you've been cd-ing to the directory a file is located in and then
+feeding `cat` the filename. This time, give `cat` a relative path: the file
+is located at `a/folder/objective.txt`

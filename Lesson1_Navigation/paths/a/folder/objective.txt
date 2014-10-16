@@ -1,0 +1,12 @@
+Great job! Notice that even though you passed a different path. your current
+path hasn't changed: if you run `pwd`, you should find that it's the same
+as before.
+
+You can continue on to the next section if you want: the next directory will be
+located at `../shortcuts` (is this a relative path or an absolute one, and why?)
+
+However, there is a bonus question: you first accessed this file by using the
+relative path `a/folder/objective.txt`. Can you figure out how to access it by
+an absolute path? Hint: relative paths are relative to your current directory,
+and `pwd` gives the path to your directory from the root. Could you combine
+the two?
