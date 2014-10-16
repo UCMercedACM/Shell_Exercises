@@ -1,0 +1,13 @@
+Lesson 1 - Navigation
+
+Objectives:
+* To gain an understanding of the Filesystem structure
+* To understand how to move around the filesystem from the commandline
+
+Procedure:
+* Watch the presentation at the front to get an understanding of the filesystem
+* run ls to see all the files in in the directory
+* once you've done that cd into the directory flags
+* run ls and cat the the file you find
+
+TODO: add cd and ls documentation to intro
