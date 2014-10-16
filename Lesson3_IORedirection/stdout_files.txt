@@ -1,0 +1,21 @@
+So we have these stdin and stdout pipes we can redirect. So what?
+
+Well, we don't just have to redirect them to other terminals or printers. We
+can also tell stdout to go to a file. That way, it records everything that would
+normally be printed to the screen.
+
+                      stdout
+     ________________________________________________________
+     |                                                      |
+     |                       X                              |
+_____|____           ________|_______                 ______|______
+|     o  |          |                |                |           |
+|        |          |    Monitor     |                |   File    |
+|Computer|          |                |                |___________|
+|        |          |________________|
+|________|               ____|____
+
+
+                  ========================
+                   stdout going to a file
+                  ========================

@@ -1,0 +1,101 @@
+Here's a question you probably haven't thought about yet: how does the computer
+know where to print output to? After all, when computers were coming out,
+screens weren't a thing yet. In the early days of UNIX, the most common output
+device was actually a printer, or a teletype (tty). As you can imagine, printing
+to a screen and a printer are two very different tasks. Do we really want to write a
+program that has to know how to print to a printer and a teletype and a monitor
+and a stock ticker and and LED display?
+
+No! Of course we don't! That's why back in the early days of computing, someone
+had the brilliant idea of making a "standard output descriptor", now referred to
+as "stdout". All programs have to do when they want to print to the user is to
+print to stdout, and the operating system will take care of making sure that
+output is displayed correctly, no matter what device is connected. You can think
+of it as a big pipe with output that connects to your monitor.
+
+
+                      stdout
+         _____________________________________
+         |                                   |
+         |                                   |
+    _____|____                        _______|________
+    |     o  |                       |                |
+    |        |                       |    Monitor     |
+    |Computer|                       |                |
+    |        |                       |________________|
+    |________|                           ____|____
+
+
+              =============================
+               stdout on a normal computer
+              =============================
+
+
+If you've programmed in Java before, the commands `System.out.println()` and
+`System.out.print()` send things to stdout. In C++, stdout is named "cout".
+
+In addition, there's a standard input stream as well. stdin is the input for all
+programs. By default, it's tied to your keyboard. Whenever you use `cin` in C++,
+or a `Scanner` or `Read` method in Java, the input comes from cin.
+
+
+                        stdout
+         ______________________________________
+         |                                    |
+         |                                    |
+    _____|____                        ________|_______
+    |     o  |                       |                |
+    |        |                       |    Monitor     |
+    |Computer|                       |                |
+    |        |                       |________________|
+    |________|                           ____|____
+        |
+        |                         _________________________
+        |                         |~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~|
+        |_________________________|       Keyboard        |
+                  stdin           |_______________________|
+
+
+
+
+               =======================================
+                stdout and stdin on a normal computer
+               =======================================
+
+So if these things are normally tied to the keyboard and monitor these days,
+why do we have them at all? The answer is that sometimes, the standard inputs
+and outputs aren't at all what we want! For instance, right now, when you're
+logged in to ssh, you probably wouldn't want the output going to engapps's
+monitors! Instead, the system *redirects* the inputs and outputs to your
+computer. The pipe gets unplugged from the monitor and plugged into your
+computer instead, and the same thing happens for the keyboard.
+
+
+                                stdout
+         ________________________________________________________
+         |                                                      |
+         |                       X                              |
+    _____|____           ________|_______                 ______|______
+    |     o  |          |                |                |           |
+    |        |          |    Monitor     |                |   Laptop  |
+    |Computer|          |                |                |___________|
+    |        |          |________________|               /           /
+    |________|               ____|____                  /           /
+        |                                              /___________/
+        |            _________________________                   |
+        |            |~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~|                   |
+        |______  X __|       Keyboard        |                   |
+        |            |_______________________|                   |
+        |                                                        |
+        |________________________________________________________|
+                                stdin
+
+                ==================================
+                  stdout and stdin when using ssh
+                ==================================
+
+
+
+Learning how to take advantage of these redirects is the key to unlocking the
+power of the shell. When you think you understand how stdin/stdout work, go ahead
+and take a look at stdout_files.txt (don't forget to TAB-complete the name!).

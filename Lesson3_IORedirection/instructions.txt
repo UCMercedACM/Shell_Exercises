@@ -1,0 +1,10 @@
+This lesson is mostly going to be reading and thinking. There will
+only be three commands introduced in this lesson: the pipe (`|`), the
+input redirect (`<`), and output redirection (`>` and `>>`). Don't think that
+means it's not important! I/O redirection is arguably *the* thing that makes
+the shell so powerful.
+
+Go ahead and get started by opening up the file "stdwhat.txt" in this
+directory. You might want to use `less`...it's a decent size. If you already
+looked at the presentation on stdout and stdin and think you understand it,
+you can go ahead and run `cd fileredirects`

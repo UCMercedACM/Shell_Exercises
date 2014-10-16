@@ -6,8 +6,9 @@ Objectives:
 
 Notations:
 * For the rest of this tutorial, commands will be enclosed in backticks. For
-  example, you got to this file by running `cat objective.txt`
-* Larger pieces of code will be indented. You opened this file by running
+  example, you got to this file by running `cat objective.txt`. Do not
+  include the backticks when you are running the command.
+* Larger pieces of code will be indented e.g. you opened this file by running
 
     cat objective.txt
 
@@ -16,5 +17,8 @@ Procedure:
 * Run `ls` to see all the files in in the directory
 * Once you've done that run `cd flags` to cd into the directory flags
 * Once inside, run `ls` and `cat` the the file you find
+
+P.S. If you want to have some fun first, use `echo` to print things to the
+screen. Try running `echo "hello world!"`, for example.
 
 TODO: add cd and ls documentation to intro
