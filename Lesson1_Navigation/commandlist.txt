@@ -1,0 +1,12 @@
+Overview of filesystem and navigation
+
+Commands:
+pwd
+ls
+cd
+echo
+
+Also mention:
+TAB complete
+simple path expansions (.., ., and ~)
+Arrow keys!

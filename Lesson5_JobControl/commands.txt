@@ -1,0 +1,6 @@
+Interrupt (CTRL+C)
+EOF       (CTRL+D)
+ (use write to demonstrate EOF usage)
+Suspend   (CTRL+C)
+fg
+bg

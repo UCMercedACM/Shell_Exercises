@@ -1,0 +1,10 @@
+grep
+find
+ps (pair with grep!)
+w
+free
+top
+clear
+
+Extra:
+sed

@@ -1,0 +1,4 @@
+Discussion of stdin/stdout
+
+pipes
+file redirection ( < > << >)
