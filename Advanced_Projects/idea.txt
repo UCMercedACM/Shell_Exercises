@@ -1,0 +1,6 @@
+Project ideas:
+
+Find image based off of time
+Mislabeled files (extensions)
+Find mp3 files that are same by content
+rename all files

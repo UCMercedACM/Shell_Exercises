@@ -7,3 +7,4 @@ mv
 cp
 rm (CAREFUL!!)
 mkdir
+file
