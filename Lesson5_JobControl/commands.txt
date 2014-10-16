@@ -4,3 +4,5 @@ EOF       (CTRL+D)
 Suspend   (CTRL+C)
 fg
 bg
+jobs
+kill

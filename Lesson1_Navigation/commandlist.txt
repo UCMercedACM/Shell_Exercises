@@ -8,5 +8,7 @@ echo
 
 Also mention:
 TAB complete
-simple path expansions (.., ., and ~)
+simple path expansions (.., ., -, and ~)
 Arrow keys!
+
+Flags for ls

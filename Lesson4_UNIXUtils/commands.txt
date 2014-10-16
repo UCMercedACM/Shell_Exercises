@@ -7,4 +7,6 @@ top
 clear
 
 Extra:
-sed
+wc
+cut
+diff
