@@ -19,3 +19,21 @@ _____|____           ________|_______                 ______|______
                   ========================
                    stdout going to a file
                   ========================
+
+To do this, we simply type a `>` and then the filename we want things to go
+to. For instance, if we want to record the list of files in our current
+directory, we type
+
+    ls > currentfiles.txt
+
+BE CAREFUL WHEN DOING THIS! The single redirect `>` will OVERWRITE anything
+in that file! Accidentally redirected to your ssh keys? You can kiss them
+goodbye.
+
+If you want to append to a file instead of overwriting it, you can use a
+double symbol, `>>`. This will write to the end of the file instead of
+overwriting everything.
+
+Try playing around with a file by redirecting the output of `ls`. Try
+getting multiple copies of the information and overwriting it. Once 
+you understand what's going on, cd into fileredirects.
