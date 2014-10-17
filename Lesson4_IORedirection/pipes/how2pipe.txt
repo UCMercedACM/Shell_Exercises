@@ -1,0 +1,82 @@
+The last exercise we did was an example in how powerful the shell is. In order
+to get the final output file from most other methods, we would have had to
+write a whole bunch of script with regexps---a nasty subject which is a full
+semester course on its own.
+
+There's one complaint though: if you run `ls ../fileredirects`, you'll notice
+a lot of files littering the directory that are no longer of any use to us! We
+created them just to pass them to the next program, and then they're useless
+to us. In terms of our "stdout/stdin as pipes" analogy, it looks something like
+this:
+
+      stdin               stdout   stdin              stdout
+             ___________                  _________
+      _______|         |_____       ______|       |______
+      |      |  grep   |    |       |     | grep  |     |
+      |      |         |    |       |     |       |     |
+______|___   |_________|   _|_______|___  |_______|    _|________
+| ~~~~~~ |                 |  ~~~~~~   |              |  ~~~~~~  |
+|        |                 |           |              |          |
+| yum.log|                 |updated.log|              |   final  |
+|________|                 |___________|              |__________|
+
+
+                      ===========================
+                        Redirect path with files
+                      ===========================
+
+Notice that updated.log is only used as a holding place for the output from
+one grep to the next. What if we could tie the two together directly? We could
+send the output from one grep directly to the next, so that we wouldn't have to
+make a temporary file and then delete it after.
+
+Unfortunately, there's no way to do that. We're stuck. Sorry.
+
+Hah, of course there's a way to do it! We just use the pipe (`|`) character.
+The pipe tells the shell to take the input from the program on the left and
+pass it to the program on the right.
+
+Let's break down the following command:
+
+  grep a file1.txt | grep b >> finalfile.txt
+
+The first command looks for "a" from file1.txt. What does that normally
+print out? It normally prints out a list of all the matching terms. We then
+feed that list to a second grep command, which looks for all instances of "b".
+
+What is the second command searching through? It's looking through the list that
+the first grep command gave it. The output is then printed to a file. Using the
+above diagram, our execution looks like:
+
+stdin                         PIPE           stdout
+             ___________                  _________
+      _______|         |__________________|       |______
+      |      |  grep a |                  | grep b|     |
+      |      |         |                  |       |     |
+______|___   |_________|                  |_______|    _|________
+| ~~~~~~ |                                            |  ~~~~~~  |
+|        |                                            |          |
+| file1  |                                            |finalfile |
+|________|                                            |__________|
+
+
+                ===========================
+                  Redirect path with pipes
+                ===========================
+
+Now the two programs are linked directly, without a file in the middle.
+
+Remember Doug McIlroy's solution to the word-counting problem? It looked like
+
+      tr -cs A-Za-z '\n' |
+      tr A-Z a-z |
+      sort |
+      uniq -c |
+      sort -rn |
+      sed ${1}q
+
+Notice how each command is being piped to the next one? This is the power of
+the command line in action. Without the pipe, it would be very difficult to get
+the program to be as simple as it is.
+
+Open up instructions.txt.

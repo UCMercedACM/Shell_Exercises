@@ -1,14 +1,21 @@
-The last exercise we did was an example in how powerful the shell is. In order
-to get the final output file from most other methods, we would have had to
-write a whole bunch of script with regexps---a nasty subject which is a full
-semester course on its own.
+First, open up how2pipe.txt and read that. Once you've read it, come back here.
 
-There's one complaint though: if you run `ls ../fileredirects`, you'll notice
-a lot of files littering the directory that are no longer of any use to us! We
-created them just to pass them to the next program, and then they're useless
-to us. In terms of our "stdout/stdin as pipes" analogy, it looks something like
-this:
+Now that you understand how pipes work, let's use them to solve the same
+problem as last time, but with a lot fewer steps.
 
-    |
-    | 
-    |
+I have provided the complete yum.log for you. Write a single-line shell command
+that finds updated libraries and prints the output to a file. HINT: Try looking
+at the command at the end of how2pipe.txt
+
+We can do all sorts of things with pipes now. For instance, we can write a
+command that looks for all updates programs (that is, NOT a library) that has
+the letter "c" in it's name. Try to write that one! HINT: use the -v flag of
+grep to find all entries NOT matching a pattern.
+
+Another handy trick is to pipe `ps` through `grep` to find a particular process.
+Try running `ps -ef` to list all processes, then grepping for your username
+in the output. You might be surprised at what you find.
+
+Once you're done, go ahead and cd out of this lesson. This is the last lesson
+in the series! At this point, you can ask one of the helpers about shell
+scripting, or try some of the advanced exercises.
