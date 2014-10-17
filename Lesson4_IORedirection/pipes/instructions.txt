@@ -1,0 +1,14 @@
+The last exercise we did was an example in how powerful the shell is. In order
+to get the final output file from most other methods, we would have had to
+write a whole bunch of script with regexps---a nasty subject which is a full
+semester course on its own.
+
+There's one complaint though: if you run `ls ../fileredirects`, you'll notice
+a lot of files littering the directory that are no longer of any use to us! We
+created them just to pass them to the next program, and then they're useless
+to us. In terms of our "stdout/stdin as pipes" analogy, it looks something like
+this:
+
+    |
+    | 
+    |
