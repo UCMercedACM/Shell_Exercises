@@ -10,7 +10,7 @@ Notations:
   include the backticks when you are running the command.
 * Larger pieces of code will be indented e.g. you opened this file by running
 
-    cat objective.txt
+    cat instructions.txt
 
 Procedure:
 * Watch the presentation at the front to get an understanding of the filesystem

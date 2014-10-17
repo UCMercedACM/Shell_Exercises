@@ -11,4 +11,4 @@ There are two kinds of paths used in UNIX systems:
 The next file you'll need to read is located further down in some directories.
 Up until now, you've been cd-ing to the directory a file is located in and then
 feeding `cat` the filename. This time, give `cat` a relative path: the file
-is located at `a/folder/objective.txt`
+is located at `a/folder/instructions.txt`
