@@ -1,0 +1,10 @@
+I recently updated my Fedora server with some spiffy new libraries.
+Unfortunately, they were so spiffy that some of my programs stopped working.
+I need to go back into my log files to see what happened.
+
+Unfortunately, the computer decided to split my log files into two parts, so I
+can't run grep on it! We'll need to reconstruct the original log file first.
+
+Use `cat` and the output redirection operators `>` and `>>` to turn yum1.log
+and yum2.log into a single logfile named "yum.log". Once you've done that,
+look at step2.txt for what to do next.

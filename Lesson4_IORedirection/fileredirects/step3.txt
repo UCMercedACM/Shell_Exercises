@@ -1,0 +1,8 @@
+Excellent! Unfortunately, that's not quite all we need. Updating
+programs won't usually affect other programs--we need to find a list of
+libraries. This is made pretty easy by the fact that libraries have the word
+"lib" in their names.
+
+Make a list of all updated libraries by using grep on your "updated.log" and
+searching for "lib". Send the result to whatever file you'd like. When you're
+done, run `./checkanswer.bash`

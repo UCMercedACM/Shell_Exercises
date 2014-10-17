@@ -34,6 +34,10 @@ If you want to append to a file instead of overwriting it, you can use a
 double symbol, `>>`. This will write to the end of the file instead of
 overwriting everything.
 
+FUN FACT: If you need to create a file with a single line in it, it's often
+faster to echo that line and then redirect it instead of opening it in a text
+editor: just run `echo "a line of text" > newfile.txt`
+
 Try playing around with a file by redirecting the output of `ls`. Try
-getting multiple copies of the information and overwriting it. Once 
+getting multiple copies of the information and overwriting it. Once
 you understand what's going on, cd into fileredirects.

@@ -1,0 +1,8 @@
+Great! Now I have a single log file. I still need to find out which libraries
+were changed though. Fortunately, yum is nice enough to tell us which lines
+pertain to updates and which lines are installs. We need to find the updates,
+which are labeled with "Updated".
+
+Use grep to search for the phrase "Updated" in your newly-created yum.log.
+Send the results to a file named "updated.log" Then look at step3.txt for the
+next step.
