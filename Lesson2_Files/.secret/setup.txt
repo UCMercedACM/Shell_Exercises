@@ -1,0 +1,117 @@
+Welcome to Lesson 2
+
+This lesson is going to be extremely simple. Infact that's the whole point. We're going to setup an entire CSE project on your desktop in no time at all. 
+
+First we make a directory on our desktop with
+	mkdir ~/Desktop/Example/CSE_Project
+
+For the next two steps try
+pressing the up arrow on your keyboard
+
+you should now have the above command already filled in for you, isn't the terminal awesome?
+	
+	make a bin directory in the project
+	make a src directory in the project
+
+Now we've got to setup our text files, this is ususally the point where we'd break out gedit and start creating files. 
+On the commandline we can create files by typing `touch <filename>`
+
+Now for a new shortcut, don't we just love shortcuts?
+
+We could type `touch ~/Desktop/Example/CSE_Project/src/source.cpp`
+but remember? using the terminal is like being neo in the matrix, lets do it the cool way
+`!$` uses the arguments from the last command we ran 
+
+so we can use the following to do what we want much faster instead
+	touch !$/source.cpp
+
+--------- for most projects we would be done, but there a few other commands you might want to try
+
+There are a few other useful commands we might want to run
+mv - Move (useful for renaming files as well)
+cp - Copy
+rm - Remove (CAREFUL!!)
+file - List file info
+
+Say we wanted to move the directory from our desktop, to our documents folder.
+
+We could run 
+	mv ~/Desktop/Example/ ~/Documents/
+
+Experiment with these commands and then use cd to move on to the next lesson
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   , ; ,   .-'"""'-.   , ; ,
+   \\|/  .'         '.  \|// 
+    \-;-/             \-;-/ 
+    // ;               ; \\ 
+   //__; :.         .; ;__\\ 
+  `-----\'.'-.....-'.'/-----'
+         '.'.-.-,_.'.'
+           '(  (..-'
+             '-'
+
+
+
