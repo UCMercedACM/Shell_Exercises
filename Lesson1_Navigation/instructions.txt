@@ -6,7 +6,7 @@ Objectives:
 
 Notations:
 * For the rest of this tutorial, commands will be enclosed in backticks. For
-  example, you got to this file by running `cat objective.txt`. Do not
+  example, you got to this file by running `cat instructions.txt`. Do not
   include the backticks when you are running the command.
 * Larger pieces of code will be indented e.g. you opened this file by running
 

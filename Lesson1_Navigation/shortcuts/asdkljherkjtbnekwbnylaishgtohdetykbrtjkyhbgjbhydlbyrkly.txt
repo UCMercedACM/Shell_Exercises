@@ -10,5 +10,8 @@ it can't decide between. You can then clarify what you mean and it will complete
 as far as it can. In this case, if you type a "1" and hit TAB again, it'll
 autocomplete to "pony1.txt".
 
-Feel free to play around a bit. When you're ready to go back, go up *two*
-directories by using `cd ../..`.
+Feel free to play around a bit. When you're ready to continue on, take a look
+at the file named "advanced_tricks.txt" in the Lesson1 directory, or skip on
+back to the main directory located *two* levels above us. (That's `../..` in
+case you're a bit lost).
+

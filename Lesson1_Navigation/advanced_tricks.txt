@@ -1,0 +1,24 @@
+Well, you're just about ready to move on to the next lesson now. There are some
+things I'd like to say before you do so though.
+
+First off, the biggest mistake people make when first learning the shell is to
+type everything back out. **Don't do that!** Use TAB-completion and command
+history whenever you humanly can. If you log into a computer and find that it
+doesn't support TAB-completes, switch to a shell that does! Use `bash`, `csh`,
+`zsh`, `ksh`...whatever you can get your hands on that lets you use tab 
+completion and command history.
+
+Try to get through the rest of this tutorial using TAB
+completion as much as possible.
+
+Second, there are a whole bunch of nifty little expansions and shortcuts which
+we didn't get to cover. For example, the tilde (`~`) will expand to your 
+home directory, which is usually at `/home/<username>`. Try `echo ~` now to 
+see the absolute path of your home directory on this server.
+
+If you accidentally executed a bad `cd` command and want to go back, you can 
+revisit your last directory with `cd -`. It functions as a convenient "go back"
+and "undo" command in one.
+
+When you're done, head up to the main directory (one above us) and then go to
+Lesson 2.
