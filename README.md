@@ -14,7 +14,7 @@ Editing Rules
 ====================
 
 Please make all instruction files markdown-compliant. If you need a reference,
-use the [CommonMark tester](spec.commonmark.org/dingus.html)
+use the [CommonMark tester](https://spec.commonmark.org/dingus.html)
 
 Remember that all files are intended to be opened in the terminal. Use standard
 terminal file practices: keep line widths to 80 characters, and don't use

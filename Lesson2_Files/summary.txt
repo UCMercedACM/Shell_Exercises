@@ -1,0 +1,42 @@
+In this lesson, you learned the following commands for manipulating
+files:
+
+        mv
+        rm
+        cp
+        mkdir
+        rmdir
+        touch
+        tar
+
+There are a million ways to use these tools, and many of them are
+incredibly powerful. For example, rm can be used to remove entire
+directories, and cp can fling entire hard drives worth of content
+around. 
+
+While power is a good thing, too much power can be dangerous for
+newer users. There is one command in particular that has a habit
+of biting people when they least expect it...
+
+BE VERY, VERY CAREFUL WHEN USING THE `rm` COMMAND!!
+
+`rm` does not have a recycling bin. Once something has been hit by
+`rm`, it is gone forever. In fact, if you run the following
+command:
+
+        ##DO NOT RUN THIS COMMAND!!
+        rm -rf /
+        ##DO NOT RUN THIS COMMAND!!
+
+your computer will be wiped of everything that you have. If this
+is your personal computer, this usually means all your documents
+and the OS. If this is a server, it usually means all of
+your data gets destroyed. Forever. Irreversibly.
+
+The UNIX shell is powerful, but it is not particularly forgiving.
+Be careful, think before you type, and check out strange commands
+with tools like explainshell.com, and you'll probably be alright.*
+
+
+
+*Keep backups
